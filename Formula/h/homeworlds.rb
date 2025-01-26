@@ -1,9 +1,9 @@
 class Homeworlds < Formula
   desc "C++ framework for the game of Binary Homeworlds"
   homepage "https://github.com/Quuxplusone/Homeworlds/"
-  url "https://github.com/Quuxplusone/Homeworlds.git",
-      revision: "917cd7e7e6d0a5cdfcc56cd69b41e3e80b671cde"
+  url "https://github.com/Quuxplusone/Homeworlds/archive/917cd7e7e6d0a5cdfcc56cd69b41e3e80b671cde.tar.gz"
   version "20141022"
+  sha256 "330ebda8b2871049bd15bcb11b9ed91f5308a9c1d20a056ff8ce4d00aadb916c"
   license "BSD-2-Clause"
   revision 5
 
@@ -24,6 +24,9 @@ class Homeworlds < Formula
     sha256 cellar: :any,                 catalina:       "117c083e402e42c76765855805ecda628538eab7372fc80cceef84a100b9368f"
     sha256 cellar: :any_skip_relocation, x86_64_linux:   "88f7a3976037aea175f742cb16c1e3e0e7e0f7945bf9f24b42eaedeabe16834c"
   end
+
+  # Unversioned and upstream repository has no tags or releases.
+  deprecate! date: "2025-01-26", because: "does not meet requirements for `stable` URLs"
 
   depends_on "wxwidgets"
 
