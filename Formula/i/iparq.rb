@@ -6,15 +6,6 @@ class Iparq < Formula
   version "0.1.3"
   sha256 "a876943e2257077ed0d4fa5d4f0c6697c05aa4e1e209aebda24ab997293a4efa"
 
-  bottle do
-      rebuild 1
-      sha256 cellar: :any_skip_relocation, arm64_sequoia: "1d907b91a649712809d1ee774c56b098d77824b94e844eeab813ccaa9473b118"
-      sha256 cellar: :any_skip_relocation, arm64_sonoma:  "3317317a40344aa0134a70f9843208e3404de3b9884ff94d3b82903364238a60"
-      sha256 cellar: :any_skip_relocation, arm64_ventura: "6d2d3dd428ea124603044c3191378e9e2d86fc04a96b3d8cbda4265226934627"
-      sha256 cellar: :any_skip_relocation, sonoma:        "6a41000d596987c927ef1f018bb07de8f62aed2c38ee45b2a6bebc30ca5f33ee"
-      sha256 cellar: :any_skip_relocation, ventura:       "06b304505e915cdc75102d3cff1fd089237c454fd2bd73ee7b49fb29aeb9acb8"
-    end
-  
   depends_on "cmake" => :build
   depends_on "ninja" => :build
   depends_on "apache-arrow"
