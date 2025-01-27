@@ -9,8 +9,8 @@ class Iparq < Formula
   depends_on "cmake" => :build
   depends_on "ninja" => :build
   depends_on "apache-arrow"
-  depends_on "libpq" # psycopg
   depends_on "rust" => :build # for pydantic-core
+  depends_on "libpq" # psycopg
   depends_on "python@3.11"
 
   on_linux do
