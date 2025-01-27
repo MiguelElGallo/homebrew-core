@@ -3,8 +3,8 @@ class Iparq < Formula
   desc "Display version and compression of a Parquet File"
   homepage "https://github.com/MiguelElGallo/iparq"
   url "https://files.pythonhosted.org/packages/01/ae/ac53e7cf53ef0ec45be1cb2fd4e47172f2057cc561fc4d246c32b4928fbb/iparq-0.1.3.tar.gz"
-  version "0.1.3"
   sha256 "a876943e2257077ed0d4fa5d4f0c6697c05aa4e1e209aebda24ab997293a4efa"
+  license "MIT"
 
   depends_on "cmake" => :build
   depends_on "ninja" => :build
