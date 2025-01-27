@@ -5,6 +5,14 @@ class GolangMigrate < Formula
   sha256 "a7bd48cd45dc2546f23f01750486fbba5b70b723500a881bb56221b11533a6f0"
   license "MIT"
 
+  # There can be a notable gap between when a version is tagged and a
+  # corresponding release is created, so we check the "latest" release instead
+  # of the Git tags.
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
   bottle do
     sha256 cellar: :any_skip_relocation, arm64_sequoia:  "ef4734cd2decfa9e8a4c89318920ce3084d53a40b3a00544ced5a9a40795fe2a"
     sha256 cellar: :any_skip_relocation, arm64_sonoma:   "a893fa52ef390ceeac195fb0e7a0e3ca4bf713da7b846b2b7f01165ab559e271"
