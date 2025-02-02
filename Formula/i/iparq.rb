@@ -117,6 +117,6 @@ class Iparq < Formula
   end
 
   test do
-    system "#{bin}/iparq", "--help"
+    system bin/"iparq", "--help"
   end
 end
